@@ -1,0 +1,24 @@
+lockfileVersion: 5.3
+
+specifiers:
+  '@rush-temp/number': file:./projects/number.tgz
+  locutus: 2.0.15
+
+dependencies:
+  '@rush-temp/number': file:projects/number.tgz
+  locutus: 2.0.15
+
+packages:
+
+  /locutus/2.0.15:
+    resolution: {integrity: sha512-2xWC4RkoAoCVXEb/stzEgG1TNgd+mrkLBj6TuEDNyUoKeQ2XzDTyJUC23sMiqbL6zJmJSP3w59OZo+zc4IBOmA==}
+    engines: {node: '>= 10'}
+    dev: false
+
+  file:projects/number.tgz:
+    resolution: {integrity: sha512-xgQRS7FywlDW0pdyTDebt2bwHPksuuvws34ygiWD3zudfJJhMfwFuFfECxw76rVdeCTpgeXppqeHgMWaDrfCpQ==, tarball: file:projects/number.tgz}
+    name: '@rush-temp/number'
+    version: 0.0.0
+    dependencies:
+      locutus: 2.0.15
+    dev: false
