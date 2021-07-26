@@ -452,6 +452,11 @@
       "packageName": "@woocommerce/number",
       "projectFolder": "packages/number",
       "reviewCategory": "production"
+    },
+    {
+      "packageName": "@woocommerce/currency",
+      "projectFolder": "packages/currency",
+      "reviewCategory": "production"
     }
   ]
 }

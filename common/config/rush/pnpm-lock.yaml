@@ -1,18 +1,248 @@
 lockfileVersion: 5.3
 
 specifiers:
+  '@rush-temp/currency': file:./projects/currency.tgz
   '@rush-temp/number': file:./projects/number.tgz
+  '@wordpress/deprecated': ^2.9.0
+  '@wordpress/element': 2.19.0
+  '@wordpress/html-entities': 2.10.0
+  '@wordpress/i18n': 3.17.0
   locutus: 2.0.15
 
 dependencies:
+  '@rush-temp/currency': file:projects/currency.tgz
   '@rush-temp/number': file:projects/number.tgz
+  '@wordpress/deprecated': 2.12.3
+  '@wordpress/element': 2.19.0
+  '@wordpress/html-entities': 2.10.0
+  '@wordpress/i18n': 3.17.0
   locutus: 2.0.15
 
 packages:
 
+  /@babel/runtime/7.14.8:
+    resolution: {integrity: sha512-twj3L8Og5SaCRCErB4x4ajbvBIVV77CGeFglHpeg5WC5FF8TZzBWXtTJ4MqaD9QszLYTtr+IsaAL2rEUevb+eg==}
+    engines: {node: '>=6.9.0'}
+    dependencies:
+      regenerator-runtime: 0.13.9
+    dev: false
+
+  /@tannin/compile/1.1.0:
+    resolution: {integrity: sha512-n8m9eNDfoNZoxdvWiTfW/hSPhehzLJ3zW7f8E7oT6mCROoMNWCB4TYtv041+2FMAxweiE0j7i1jubQU4MEC/Gg==}
+    dependencies:
+      '@tannin/evaluate': 1.2.0
+      '@tannin/postfix': 1.1.0
+    dev: false
+
+  /@tannin/evaluate/1.2.0:
+    resolution: {integrity: sha512-3ioXvNowbO/wSrxsDG5DKIMxC81P0QrQTYai8zFNY+umuoHWRPbQ/TuuDEOju9E+jQDXmj6yI5GyejNuh8I+eg==}
+    dev: false
+
+  /@tannin/plural-forms/1.1.0:
+    resolution: {integrity: sha512-xl9R2mDZO/qiHam1AgMnAES6IKIg7OBhcXqy6eDsRCdXuxAFPcjrej9HMjyCLE0DJ/8cHf0i5OQTstuBRhpbHw==}
+    dependencies:
+      '@tannin/compile': 1.1.0
+    dev: false
+
+  /@tannin/postfix/1.1.0:
+    resolution: {integrity: sha512-oocsqY7g0cR+Gur5jRQLSrX2OtpMLMse1I10JQBm8CdGMrDkh1Mg2gjsiquMHRtBs4Qwu5wgEp5GgIYHk4SNPw==}
+    dev: false
+
+  /@types/prop-types/15.7.4:
+    resolution: {integrity: sha512-rZ5drC/jWjrArrS8BR6SIr4cWpW09RNTYt9AMZo3Jwwif+iacXAqgVjm0B0Bv/S1jhDXKHqRVNCbACkJ89RAnQ==}
+    dev: false
+
+  /@types/react-dom/16.9.14:
+    resolution: {integrity: sha512-FIX2AVmPTGP30OUJ+0vadeIFJJ07Mh1m+U0rxfgyW34p3rTlXI+nlenvAxNn4BP36YyI9IJ/+UJ7Wu22N1pI7A==}
+    dependencies:
+      '@types/react': 16.14.11
+    dev: false
+
+  /@types/react/16.14.11:
+    resolution: {integrity: sha512-Don0MtsZZ3fjwTJ2BsoqkyOy7e176KplEAKOpr/4XDdzinlyJBn9yfsKn5mcSgn4kh1B22+3tBnzBC1z63ybtQ==}
+    dependencies:
+      '@types/prop-types': 15.7.4
+      '@types/scheduler': 0.16.2
+      csstype: 3.0.8
+    dev: false
+
+  /@types/scheduler/0.16.2:
+    resolution: {integrity: sha512-hppQEBDmlwhFAXKJX2KnWLYu5yMfi91yazPb2l+lbJiwW+wdo1gNeRA+3RgNSO39WYX2euey41KEwnqesU2Jew==}
+    dev: false
+
+  /@wordpress/deprecated/2.12.3:
+    resolution: {integrity: sha512-qr+yDfTQfI3M4h6oY6IeHWwoHr4jxbILjSlV+Ht6Jjto9Owap6OuzSqR13Ev4xqIoG4C7b5B3gZXVfwVDae1zg==}
+    dependencies:
+      '@babel/runtime': 7.14.8
+      '@wordpress/hooks': 2.12.3
+    dev: false
+
+  /@wordpress/element/2.19.0:
+    resolution: {integrity: sha512-t6GnllujeJU2N7RagWvPSSki+VnIxUQktg+cDAFDWC4XHCVoZKgs/0B48yeZSvd9T/t4ry0aILh+zeEJ+5DuHg==}
+    dependencies:
+      '@babel/runtime': 7.14.8
+      '@types/react': 16.14.11
+      '@types/react-dom': 16.9.14
+      '@wordpress/escape-html': 1.12.2
+      lodash: 4.17.21
+      react: 16.14.0
+      react-dom: 16.14.0_react@16.14.0
+    dev: false
+
+  /@wordpress/escape-html/1.12.2:
+    resolution: {integrity: sha512-FabgSwznhdaUwe6hr1CsGpgxQbzqEoGevv73WIL1B9GvlZ6csRWodgHfWh4P6fYqpzxFL4WYB8wPJ1PdO32XFA==}
+    dependencies:
+      '@babel/runtime': 7.14.8
+    dev: false
+
+  /@wordpress/hooks/2.12.3:
+    resolution: {integrity: sha512-LmKiwKldZt6UYqOxV/a6+eUFXdvALFnB/pQx3RmrMvO64sgFhfR6dhrlv+uVbuuezSuv8dce1jx8lUWAT0krMA==}
+    dependencies:
+      '@babel/runtime': 7.14.8
+    dev: false
+
+  /@wordpress/html-entities/2.10.0:
+    resolution: {integrity: sha512-D6lWrDOOiI/a/uYZpXMqL9ErT1Q4cauLWRZK/E4kaNOkhRxEUtWFiDD+00HdIkrT5QYPIuWos4h4Vw/HHM8Cgg==}
+    dependencies:
+      '@babel/runtime': 7.14.8
+    dev: false
+
+  /@wordpress/i18n/3.17.0:
+    resolution: {integrity: sha512-CTZ0oezI6BT5GlmiE4X0fzRY6i7bNsX6hxiROkGlpREY6q4s1pnwhM8ggLIaP18Bvkb/HDkUEENDrv3iwM/LIQ==}
+    hasBin: true
+    dependencies:
+      '@babel/runtime': 7.14.8
+      gettext-parser: 1.4.0
+      lodash: 4.17.21
+      memize: 1.1.0
+      sprintf-js: 1.1.2
+      tannin: 1.2.0
+    dev: false
+
+  /csstype/3.0.8:
+    resolution: {integrity: sha512-jXKhWqXPmlUeoQnF/EhTtTl4C9SnrxSH/jZUih3jmO6lBKr99rP3/+FmrMj4EFpOXzMtXHAZkd3x0E6h6Fgflw==}
+    dev: false
+
+  /encoding/0.1.13:
+    resolution: {integrity: sha512-ETBauow1T35Y/WZMkio9jiM0Z5xjHHmJ4XmjZOq1l/dXz3lr2sRn87nJy20RupqSh1F2m3HHPSp8ShIPQJrJ3A==}
+    dependencies:
+      iconv-lite: 0.6.3
+    dev: false
+
+  /gettext-parser/1.4.0:
+    resolution: {integrity: sha512-sedZYLHlHeBop/gZ1jdg59hlUEcpcZJofLq2JFwJT1zTqAU3l2wFv6IsuwFHGqbiT9DWzMUW4/em2+hspnmMMA==}
+    dependencies:
+      encoding: 0.1.13
+      safe-buffer: 5.2.1
+    dev: false
+
+  /iconv-lite/0.6.3:
+    resolution: {integrity: sha512-4fCk79wshMdzMp2rH06qWrJE4iolqLhCUH+OiuIgU++RB0+94NlDL81atO7GX55uUKueo0txHNtvEyI6D7WdMw==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      safer-buffer: 2.1.2
+    dev: false
+
+  /js-tokens/4.0.0:
+    resolution: {integrity: sha512-RdJUflcE3cUzKiMqQgsCu06FPu9UdIJO0beYbPhHN4k6apgJtifcoCtT9bcxOpYBtpD2kCM6Sbzg4CausW/PKQ==}
+    dev: false
+
   /locutus/2.0.15:
     resolution: {integrity: sha512-2xWC4RkoAoCVXEb/stzEgG1TNgd+mrkLBj6TuEDNyUoKeQ2XzDTyJUC23sMiqbL6zJmJSP3w59OZo+zc4IBOmA==}
     engines: {node: '>= 10'}
+    dev: false
+
+  /lodash/4.17.21:
+    resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
+    dev: false
+
+  /loose-envify/1.4.0:
+    resolution: {integrity: sha512-lyuxPGr/Wfhrlem2CL/UcnUc1zcqKAImBDzukY7Y5F/yQiNdko6+fRLevlw1HgMySw7f611UIY408EtxRSoK3Q==}
+    hasBin: true
+    dependencies:
+      js-tokens: 4.0.0
+    dev: false
+
+  /memize/1.1.0:
+    resolution: {integrity: sha512-K4FcPETOMTwe7KL2LK0orMhpOmWD2wRGwWWpbZy0fyArwsyIKR8YJVz8+efBAh3BO4zPqlSICu4vsLTRRqtFAg==}
+    dev: false
+
+  /object-assign/4.1.1:
+    resolution: {integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=}
+    engines: {node: '>=0.10.0'}
+    dev: false
+
+  /prop-types/15.7.2:
+    resolution: {integrity: sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      react-is: 16.13.1
+    dev: false
+
+  /react-dom/16.14.0_react@16.14.0:
+    resolution: {integrity: sha512-1gCeQXDLoIqMgqD3IO2Ah9bnf0w9kzhwN5q4FGnHZ67hBm9yePzB5JJAIQCc8x3pFnNlwFq4RidZggNAAkzWWw==}
+    peerDependencies:
+      react: ^16.14.0
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.7.2
+      react: 16.14.0
+      scheduler: 0.19.1
+    dev: false
+
+  /react-is/16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+    dev: false
+
+  /react/16.14.0:
+    resolution: {integrity: sha512-0X2CImDkJGApiAlcf0ODKIneSwBPhqJawOa5wCtKbu7ZECrmS26NvtSILynQ66cgkT/RJ4LidJOc3bUESwmU8g==}
+    engines: {node: '>=0.10.0'}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+      prop-types: 15.7.2
+    dev: false
+
+  /regenerator-runtime/0.13.9:
+    resolution: {integrity: sha512-p3VT+cOEgxFsRRA9X4lkI1E+k2/CtnKtU4gcxyaCUreilL/vqI6CdZ3wxVUx3UOUg+gnUOQQcRI7BmSI656MYA==}
+    dev: false
+
+  /safe-buffer/5.2.1:
+    resolution: {integrity: sha512-rp3So07KcdmmKbGvgaNxQSJr7bGVSVk5S9Eq1F+ppbRo70+YeaDxkw5Dd8NPN+GD6bjnYm2VuPuCXmpuYvmCXQ==}
+    dev: false
+
+  /safer-buffer/2.1.2:
+    resolution: {integrity: sha512-YZo3K82SD7Riyi0E1EQPojLz7kpepnSQI9IyPbHHg1XXXevb5dJI7tpyN2ADxGcQbHG7vcyRHk0cbwqcQriUtg==}
+    dev: false
+
+  /scheduler/0.19.1:
+    resolution: {integrity: sha512-n/zwRWRYSUj0/3g/otKDRPMh6qv2SYMWNq85IEa8iZyAv8od9zDYpGSnpBEjNgcMNq6Scbu5KfIPxNF72R/2EA==}
+    dependencies:
+      loose-envify: 1.4.0
+      object-assign: 4.1.1
+    dev: false
+
+  /sprintf-js/1.1.2:
+    resolution: {integrity: sha512-VE0SOVEHCk7Qc8ulkWw3ntAzXuqf7S2lvwQaDLRnUeIEaKNQJzV6BwmLKhOqT61aGhfUMrXeaBk+oDGCzvhcug==}
+    dev: false
+
+  /tannin/1.2.0:
+    resolution: {integrity: sha512-U7GgX/RcSeUETbV7gYgoz8PD7Ni4y95pgIP/Z6ayI3CfhSujwKEBlGFTCRN+Aqnuyf4AN2yHL+L8x+TCGjb9uA==}
+    dependencies:
+      '@tannin/plural-forms': 1.1.0
+    dev: false
+
+  file:projects/currency.tgz:
+    resolution: {integrity: sha512-p8VHtLjkU1oG0huPNfEzh3h8gHYyQQo3qwdHo7jW7YMPManBdAIkBMxFjMt4mgqkjrexUYUoXXOwc+U8qdEvDw==, tarball: file:projects/currency.tgz}
+    name: '@rush-temp/currency'
+    version: 0.0.0
+    dependencies:
+      '@wordpress/deprecated': 2.12.3
+      '@wordpress/element': 2.19.0
+      '@wordpress/html-entities': 2.10.0
+      '@wordpress/i18n': 3.17.0
     dev: false
 
   file:projects/number.tgz:
