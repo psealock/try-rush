@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "ui",
+      "comment": "Changed the number",
+      "type": "major"
+    }
+  ],
+  "packageName": "ui",
+  "email": "psealock@gmail.com"
+}
