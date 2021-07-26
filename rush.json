@@ -451,17 +451,20 @@
     {
       "packageName": "ui",
       "projectFolder": "apps/ui",
-      "reviewCategory": "production"
+      "reviewCategory": "production",
+      "shouldPublish": true
     },
     {
       "packageName": "@woocommerce/number",
       "projectFolder": "packages/number",
-      "reviewCategory": "production"
+      "reviewCategory": "production",
+      "shouldPublish": true
     },
     {
       "packageName": "@woocommerce/currency",
       "projectFolder": "packages/currency",
-      "reviewCategory": "production"
+      "reviewCategory": "production",
+      "shouldPublish": true
     }
   ]
 }
