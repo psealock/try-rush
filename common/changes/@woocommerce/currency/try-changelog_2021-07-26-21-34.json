@@ -1,0 +1,11 @@
+{
+  "changes": [
+    {
+      "packageName": "@woocommerce/currency",
+      "comment": "Updated default formats",
+      "type": "patch"
+    }
+  ],
+  "packageName": "@woocommerce/currency",
+  "email": "psealock@gmail.com"
+}
