@@ -449,6 +449,11 @@
     //   "reviewCategory": "tools"
     // },
     {
+      "packageName": "ui",
+      "projectFolder": "apps/ui",
+      "reviewCategory": "production"
+    },
+    {
       "packageName": "@woocommerce/number",
       "projectFolder": "packages/number",
       "reviewCategory": "production"
