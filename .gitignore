@@ -67,3 +67,4 @@ common/autoinstallers/*/.npmrc
 # Built packages
 packages/**/build/
 packages/**/build-module/
+apps/**/dist/
